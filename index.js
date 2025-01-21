@@ -21,11 +21,20 @@
 console.log("Завдання: 1 ==============================");
 
 // Виводимо в консоль Об'єкт: Book
-
+const Book = {
+    title: "Загальна Книга",
+    author: "Анонім",
+    pages: 0,
+    read() {
+        console.log(`Ви читаєте ${this.title} від ${this.author}`);
+    }
+};
 // Виводимо в консоль прототип Об'єкту: Book
+console.log(Book);
 
 // Викликаємо функцію read об'єкту Book
-
+console.log(Object.getPrototypeOf(Book));
+Book.read();
 // 2. Наслідування від базового об'єкту Book
 
 /*
